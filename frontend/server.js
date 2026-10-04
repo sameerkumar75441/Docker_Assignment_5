@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 
 app.post("/submit", async (req, res) => {
     try {
-       const response = await fetch("http://backend:5000/process", {
+       const response = await fetch("http://localhost:5000/process", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
